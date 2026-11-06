@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    font-family:sans-serif;
+}
+/* todo el header */
+header{
+    display: flex;
+    justify-content: space-between; /* Empuja el logo a la izquierda y el menú a la derecha */
+  align-items: center;            /* Centra todo verticalmente */
+  padding: 15px 30px;             /* Espaciado interno alrededor del header */
+  background-color: #372010; 
+  color: #F2E6D9;
+}
+.ttleheader{
+    font-size:larger;
+}
+.imagenytitulo{
+    display: flex;
+    align-items: center;
+    gap: 15px;  
+}
+nav{
+    display: flex;
+    gap: 20px; 
+    
+}
+nav a{
+    text-decoration: none;          /* Quita el subrayado a los links */
+  color: #333;                    /* Color del texto */
+  font-weight: bold;
+  color: #F2E6D9; 
+}
+
+.taza{
+    width: 3em; /* Tomará un tamaño proporcional al tamaño de la letra del título */
+    height: auto;
+}
+hr{
+    border: none;
+    height: 4px;
+    background-color: #F4AF25;
+}
+/* ----------------------------------------- */
+/* todo el main */
+/* ----------------------------------------- */
+.banner{
+    background: linear-gradient(150deg,#48370eec 5% , #203b22); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centra los hijos horizontalmente */
+    text-align: center;       /* Centra el texto por dentro */
+    width: 100%;
+    
+}
+.ttlebanner{
+    color: #F2E6D9;
+    font-size: 2.2rem;
+    font-weight: bold;
+    max-width: 650px;         /* Ajusta este número para cortar el título exactamente en "Macizo"*/
+    margin-bottom: 20px;
+    margin-top: 40px;
+    line-height: 1.3;
+}
+.txtbanner{
+    color: #F2E6D9;
+    max-width: 650px;         /* Ajusta este número para cortar el título exactamente en "Macizo"*/
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+.botonprod{
+    height: 50px;
+    width: 115px;
+    background-color: #e48e0c;
+    color: #372010;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+.botonescribe{
+    height: 35px;
+    width: 95px;
+    background-color: transparent;
+    border: 2px solid   #c4c9d0; /* Borde grisáceo/blanco sutil */
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+}
+.botones{
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-direction: column; /* Hace que se apilen uno debajo del otro */
+  align-items: center;
+    
+}
+
+
+/* seccion de paleta de colores usada */
+.paleta {
+    padding: 3rem 1rem;
+    text-align: center;
+    background: #f2e6d9;
+}
+
+.burbujas {
+    display: flex;
+    flex-wrap: wrap;          /* se acomodan en varias filas si no caben */
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 2rem auto 0;
+}
+
+.burbuja {
+    display: flex;
+    flex-direction: column;   /* círculo arriba, texto abajo */
+    align-items: center;
+    gap: .25rem;
+    width: 100px;
+}
+
+.color {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--c);
+    box-shadow: 0 2px 6px rgba(0,0,0,.25);
+}
+
+.burbuja h4 {
+    font-size: .8rem;
+    margin: .5rem 0 0;
+}
+
+.burbuja code {
+    font-size: .7rem;
+    color: #666;
+}
